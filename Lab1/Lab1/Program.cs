@@ -51,8 +51,8 @@ namespace Lab1
             Console.WriteLine("Дискриминант равен: {0}", D);
             if (D > 0)
             {
-                x1 = (-b + Math.Sqrt(D))/a*2;
-                x2 = (-b - Math.Sqrt(D))/a*2;
+                x1 = (-b + Math.Sqrt(D))/(a*2);
+                x2 = (-b - Math.Sqrt(D))/(a*2);
                 Console.WriteLine("1-ый корень равен: {0}", x1);
                 Console.WriteLine("2-ой корень равен: {0}", x2);
             }
@@ -64,7 +64,7 @@ namespace Lab1
             }
             else
             {
-                Console.Write("Корней нет");
+                Console.WriteLine("Корней нет");
             }
         }
     }

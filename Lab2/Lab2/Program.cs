@@ -4,39 +4,43 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FigureCollections
+namespace Lab2
 {
     abstract class Figure : IComparable
     {
-        public string Type
+        public abstract double area();
+    }
+    interface IPrint
+    {
+        void print();
+    }
+    class Rectangle : Figure, IPrint
+    {
+        private double _width;
+        public double width
         {
             get
             {
-                return this._Type;
+                return _width;
             }
-            protected set
+            set
             {
-                this._Type = value;
+                _width = value;
             }
         }
-        string _Type;
-        public abstract double Area();
+        public double height { get; set; }
+        public Rectangle(double a, double b) { _width = a; height = b; }
+        public override double area()
+        {
+            return _width*height;
+        }
         public override string ToString()
         {
-            return this.Type + " площадью " + this.Area().ToString();
+            string temp;
+            temp = ("Rectangle: width = {0} \n" + "height = {1} \n" + "area = {2} \n", _width, height, area);
         }
-        public int CompareTo(object obj)
-        {
-            Figure p = (Figure)obj;
-            if (this.Area() < p.Area()) return -1;
-            else if (this.Area() == p.Area()) return 0;
-            else return 1; 
-        }
-     }
-}
-
-namespace Lab2
-{
+    }
+    
     class Program
     {
         static void Main(string[] args)
