@@ -167,7 +167,7 @@
             this.listBox2.ItemHeight = 16;
             this.listBox2.Location = new System.Drawing.Point(579, 12);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(136, 212);
+            this.listBox2.Size = new System.Drawing.Size(217, 212);
             this.listBox2.TabIndex = 15;
             // 
             // button3
@@ -194,7 +194,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(740, 392);
+            this.ClientSize = new System.Drawing.Size(820, 392);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.listBox2);

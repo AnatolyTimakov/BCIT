@@ -218,7 +218,6 @@ namespace HomeTask
                 t.Stop();
                 this.textBox4.Text = t.Elapsed.ToString();
                 listBox1.SelectedIndex = listBox1.FindStringExact(textBox1.Text);
-                Lev_distanse(textBox1.Text);
             }
             else
             {
